@@ -68,7 +68,8 @@ This behavior is not present when run in production via `npm run prod`.
 ## Structure
 
 - The server component is an `express` server with a single route handling fetching of weather data.
-- Static file serving is accomplished via the `ecstatic` middleware for `express`.
+- The main server file is `app.js`.
+- Static file serving is accomplished via the `ecstatic` middleware for `express`, targeting the `/public` folder.
 - The cache is implemented as an in-process cache using `node-persist`, optionally memory-only, with a simple `get/set` interface that could easily be ported to another caching system.
 - The client uses `jquery` to handle browser events and to communicate with the server.
 
@@ -80,4 +81,5 @@ This behavior is not present when run in production via `npm run prod`.
 - This sort of component would do well encapsulated (React, etc). No desire to increase dev time implementing build compilers, etc, but the main search controller would prob. be bound to state update events.
 - No gzipping or other effort has been made to reduce load times. 
 - The general UI is very rough, but usable.
+- The API keys are hardcoded. ENV vars or similar have not been implemented. No real security survey has been made.
 - In the end I think the weather-story idea is not going to work -- I think it would at least need truly compelling animations/story. But I enjoyed the exploration.
