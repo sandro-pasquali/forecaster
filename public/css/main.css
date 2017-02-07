@@ -1,0 +1,70 @@
+html, body {
+    height: 100%;
+    border: 0px;
+    padding: 0px;
+    margin: 0px;
+    font-family: Helvetica;
+}
+
+input:focus,
+button:focus {
+    outline: none;
+}
+
+#search-input {
+    height: 60px;
+    font-weight: bold;
+    font-size: 3em;
+    text-align: center;
+    color: black;
+
+    border: 0px;
+}
+
+
+#ascii-weather  {
+    font-weight: bold;
+    font-size: 1em;
+    line-height: 0.8em;
+    width: 300px;
+    margin: 0 auto;
+    margin-top: 20px;
+}
+
+#weather-hour {
+    text-align: center;
+    font-weight: bold;
+    width: auto;
+    max-width: 600px;
+    font-size: 1.2em;
+    padding: 10px;
+    background: black;
+    color: white;
+    margin: 0 auto;
+    margin-top: 20px;
+}
+
+#search-control {
+    text-align: center;
+    border: 1px solid black;
+}
+
+#search-input {
+    display: inline-block;
+}
+
+#days-week {
+    text-align: center;
+}
+
+.day {
+    font-size: 1.4em;
+    font-weight: bold;
+    padding: 10px;
+    cursor: pointer;
+}
+
+.selectedDay {
+    background: #bdf7ff;
+}
+

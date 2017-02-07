@@ -1,0 +1,25 @@
+{
+  "apps": {
+      "name": "forecast-dev",
+      "script": "./app.js",
+      "instances": 1,
+      "exec_mode": "cluster",
+      "max_memory_restart": "500M",
+      "max_restarts": 5,
+      "autorestart": false,
+      "restart_delay": 2000,
+      "min_uptime": 3000,
+      "watch": [
+        "./app.js"
+      ],
+      "ignore_watch": [],
+      "watch_options": {
+        "awaitWriteFinish": true
+      },
+      "env": {
+        "NODE_ENV": "development",
+        "PM2_PROCESS_NAME": "forecast-dev",
+        "PORT": 8081
+      }
+  }
+}
